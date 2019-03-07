@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/tProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/progress_"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cons"
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="16dp">
+
+                <com.example.bashir.wetherapp.PagerRecycler.RecyclerViewPager
+                    android:id="@+id/mRecyclerList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mRecyclerDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mNoConnectionLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/no_con"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/mBuRetry"
+            style="@style/Base.Theme.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/retry_"
+            android:text="@string/retry"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@id/image" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

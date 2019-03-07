@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".IntroductionActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bad_script"
+        android:paddingTop="150dp"
+        android:text="@string/explore_weather"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/learn_and_play_weather_forecast"
+        android:textColor="#87ffffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text" />
+
+    <Button
+        android:id="@+id/mLogin"
+        style="@style/Widget.Support.CoordinatorLayout"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bu_facebook"
+        android:drawablePadding="-50dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:text="      Login With Facebook"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@id/mLoginGmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <Button
+        android:id="@+id/mLoginGmail"
+        style="@style/Widget.Support.CoordinatorLayout"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bu_gmail"
+        android:drawablePadding="-50dp"
+
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:text="      Login With Google"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

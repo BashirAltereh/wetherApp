@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">wether App</string>
+    <string name="tag">tag</string>
+    <string name="explore_weather">Explore Weather</string>
+    <string name="learn_and_play_weather_forecast">LEARN AND PLAY WEATHER FORECAST</string>
+    <string name="retry">Retry</string>
+    <string name="noConnection">No Connection</string>
+    <string name="today">TODAY</string>
+</resources>
